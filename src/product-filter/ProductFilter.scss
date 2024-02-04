@@ -1,0 +1,52 @@
+.ProductFilter {
+
+    display: flex;
+    padding: .8rem;
+    justify-content: space-between;
+    align-items: center;
+
+    .new-product {
+
+        button {
+            padding: 10px 20px;
+            background: linear-gradient(to bottom, #040d13, #063555); // Gradient background
+            color: #fff;
+            border: none;
+            border-radius: 5px; // Rounded corners
+            font-size: 20px;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.2s ease;
+
+            &:hover {
+                background: linear-gradient(to bottom, #2980b9, #3498db); // Gradient on hover
+                transform: scale(1.05); // Scale up on hover
+            }
+
+            &:active {
+                transform: scale(0.95); // Scale down on click
+            }
+            &:disabled {
+                opacity: 0.2;
+            }
+
+        }
+    }
+
+    .input-wrapper {
+
+        .free-text {
+            padding: 0.6rem;
+            border-radius: 5px;
+            border: none;
+        }
+    }
+
+    .product-sort {
+        text-align: left;
+        h2 {
+            font-size: 10px;
+            margin: 0;
+            padding: 0;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+.App {
+  text-align: center;
+  background: rgba(233, 233, 233, 0.801);
+  padding: 0.8rem;
+  height: 100vh;
+  .App-header {
+    height: 10vh;
+    background: rgba(100, 100, 100, 0.836);
+    font-size: 30px;
+    text-align: left;
+    padding: 2rem;
+  }
+
+
+  .wrapper-2-columns {
+    display: grid;
+    gap: .5rem;
+    grid-template-columns: 1fr 1fr;
+
+    .left-column {
+    }
+
+    .right-column {
+    }
+  }
+
+}

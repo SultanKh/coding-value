@@ -1,0 +1,46 @@
+.ProductList {
+    padding: 0.8rem;
+    display: grid;
+    gap: 1.8rem;
+}
+
+.pagination {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+
+    li{
+        list-style-type: none; /* Remove bullets */
+        padding: 0; /* Remove padding */
+        margin: 0; /* Remove margins */
+        font-size: 18px;
+        cursor: pointer;
+        padding: .9rem;
+        
+        &:hover {
+            background: #74030350;
+            border-radius: 50%;
+        }
+    }
+
+    .selected {
+        color: rgb(0, 0, 255);
+        font-size: 25px;
+        cursor: unset;
+        &:hover {
+            background: unset;
+        }
+    }
+
+    .next.disabled,
+    .previous.disabled {
+        opacity: 0.2;
+        cursor:unset;
+        &:hover {
+            background:unset;
+
+        }
+    }
+
+}
